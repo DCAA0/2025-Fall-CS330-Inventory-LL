@@ -120,7 +120,7 @@ public class Inventory
     {
         // Add the necessary sequential search loop
         LinkedList.Node<ItemStack> it = this.slots.head;
-        //LinkedList.Node<ItemStack> keyNode = new LinkedList.Node<>(key);
+
         while (it != null) {
             if (it.data.equals(key)) {
                 return it.data;
@@ -150,7 +150,6 @@ public class Inventory
             this.slots.tail = newNode;
             this.slots.currentSize = 1;
             return;
-            //newNode = null;
         }
 
         //Append newNode to end of existing list
